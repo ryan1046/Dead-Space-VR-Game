@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1198361703377730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4128021024666632}
+  - component: {fileID: 114797663207600160}
+  - component: {fileID: 114835324605099716}
+  m_Layer: 0
+  m_Name: _OSFPS_MANAGERS_
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4128021024666632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198361703377730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.491, y: 1.023, z: -3.5059595}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114797663207600160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198361703377730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9fc10b77f7e5b4ab2afc8672941882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  config:
+  - tag: TestMaterial
+    debris:
+    - {fileID: 1806570036952820, guid: 88926874d08e97b46a82968b15c7b946, type: 3}
+    bulletDecal:
+    - {fileID: 1283242978171496, guid: bb52bc6b5d7feb24e82fd7ed98513316, type: 3}
+    - {fileID: 1691313699930012, guid: 9eb7ae846453ab2439a72b9e15272f22, type: 3}
+--- !u!114 &114835324605099716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198361703377730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3344f8184f8a2ae4a9ce06fbb7238a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warmupConfig: []
