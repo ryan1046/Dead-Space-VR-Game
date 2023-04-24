@@ -48,7 +48,8 @@ public class GameMenuManager : MonoBehaviour
 
     void exitClick()
     {
-        Application.Quit();
+        // Application.Quit();
+        SceneManager.LoadScene("Start Scene");
     }
 
 

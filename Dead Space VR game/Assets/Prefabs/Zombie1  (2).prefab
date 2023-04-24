@@ -1691,7 +1691,7 @@ GameObject:
   - component: {fileID: 7621435378440856087}
   m_Layer: 17
   m_Name: BodyHitBox
-  m_TagString: HitBox
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4811,7 +4811,7 @@ GameObject:
   - component: {fileID: 7621435379541139440}
   m_Layer: 17
   m_Name: BodyHitBox
-  m_TagString: HitBox
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
