@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
     public GameObject HeadBox;
     private bool grabbingGun = false;
 
-
+    public GameObject menu;
 
 
     private void Update()
@@ -89,20 +89,23 @@ public class PlayerController : MonoBehaviour
        */
         //bool isLeftRayHovering = leftRay.TryGetHitInfo(out Vector3 leftPos, out Vector3 leftNormal, out int leftNumber, out bool leftValid);
         //bool isRightRayHovering = rightRay.TryGetHitInfo(out Vector3 rightPos, out Vector3 rightNormal, out int rightNumber, out bool rightValid);
-        if (isHoldingGun)
+        // if (isHoldingGun)
+        // {
+        if (!menu.active)
         {
             leftThrowRay.gameObject.SetActive(leftActivate.action.ReadValue<float>() > 0.1f && leftCancel.action.ReadValue<float>() == 0);
             leftRay.gameObject.SetActive(!(leftActivate.action.ReadValue<float>() > 0.1f && leftCancel.action.ReadValue<float>() == 0));
             rightThrowRay.gameObject.SetActive(rightActivate.action.ReadValue<float>() > 0.1f && rightCancel.action.ReadValue<float>() == 0);
             rightRay.gameObject.SetActive(!(rightActivate.action.ReadValue<float>() > 0.1f && rightCancel.action.ReadValue<float>() == 0));
         }
+       // }
         //rightInteractor.enabled = !(rightActivate.action.ReadValue<float>() > 0.1f && rightCancel.action.ReadValue<float>() == 0);
         //leftInteractor.enabled = !(leftActivate.action.ReadValue<float>() > 0.1f && leftCancel.action.ReadValue<float>() == 0);
     }
 
     void MoveGunToHolster()
     {
-        userWeapon.transform.position = holsterAttachPoint.position;
+       userWeapon.transform.position = holsterAttachPoint.position;
     }
 
 

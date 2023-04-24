@@ -54,7 +54,10 @@ public class SimpleShoot : MonoBehaviour
 
    public void RemoveMagazine(SelectExitEventArgs arg0)
     {
-        magazine = null;
+        if (magazine)
+        {
+            magazine = null;
+        }
 
         throw new NotImplementedException();
     }

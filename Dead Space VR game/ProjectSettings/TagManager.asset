@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - HitBox
+  - RightHand
+  - Magazine
+  - SpawnLocation
+  - LeftHand
+  - Gun
+  - Clutter
+  - HealthKit
+  - DoorCard
+  - Music
+  - Map
   layers:
   - Default
   - TransparentFX
@@ -11,29 +22,29 @@ TagManager:
   - 
   - Water
   - UI
+  - Player
+  - Interactable
+  - Hands
+  - Floor
+  - Floor
+  - Enemy
+  - Ammo
+  - Dead Body Parts
+  - 
+  - 
+  - 
+  - HitBox
   - 
   - 
   - 
   - 
   - 
   - 
+  - SpawnLocation
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Clutter
+  - MoveAble Clutter
   - 
   - 
   - 

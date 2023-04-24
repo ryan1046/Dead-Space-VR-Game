@@ -21,11 +21,12 @@ public class HealthKit : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.tag);
+       /* Debug.Log(collision.gameObject.tag);
         if(collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponentInParent<PlayerController>().gameObject.GetComponentInChildren<Health>().TakeDamage(-50); 
         }
+        */
     }
 
 

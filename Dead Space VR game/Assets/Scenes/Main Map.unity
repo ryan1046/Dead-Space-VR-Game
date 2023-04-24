@@ -3269,15 +3269,18 @@ MonoBehaviour:
   isHoldingGun: 0
   isGunHolstered: 0
   holsterAttachPoint: {fileID: 0}
+  gunLaser: {fileID: 0}
   rightInteractor: {fileID: 0}
   leftInteractor: {fileID: 0}
+  rightRangeInteractor: {fileID: 0}
+  leftRangeInteractor: {fileID: 0}
   leftActivate:
     m_UseReference: 0
     m_Action:
       m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: ed797ead-8259-41e3-a2cd-681acf2cf548
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3289,7 +3292,7 @@ MonoBehaviour:
       m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 359652c3-06ea-4a7d-a35f-034452cdb272
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3301,7 +3304,7 @@ MonoBehaviour:
       m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: edaadb1c-c082-43e0-9405-f7ded6e5a706
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3313,7 +3316,7 @@ MonoBehaviour:
       m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: ee6c3f79-c0f2-4bff-8f82-87fc896b9e00
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -5585,6 +5588,8 @@ MonoBehaviour:
   magazine: {fileID: 0}
   socketInteractor: {fileID: 1428493236}
   ammoCount: {fileID: 1374389386}
+  gunSound: {fileID: 0}
+  holdingGun: 0
 --- !u!1 &218480976
 GameObject:
   m_ObjectHideFlags: 0
@@ -12598,6 +12603,7 @@ MonoBehaviour:
   isMoving: 0
   walkPointRange: 5
   chaseTime: -38.938137
+  attackClip: {fileID: 0}
   attackTime: 3
   sightRange: 16
   attackRange: 1
@@ -12668,8 +12674,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591906948}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16, y: 1.131, z: -19.52}
+  m_LocalRotation: {x: 0, y: 0.9659259, z: -0, w: -0.25881898}
+  m_LocalPosition: {x: -1.55, y: 1.131, z: -6.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12692,7 +12698,7 @@ Transform:
   - {fileID: 2118266182}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 210, z: 0}
 --- !u!1001 &593704790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20518,6 +20524,7 @@ MonoBehaviour:
   volumeSlider: {fileID: 0}
   SFXSlider: {fileID: 0}
   gameManager: {fileID: 0}
+  controlOption: {fileID: 0}
   exitButton: {fileID: 0}
 --- !u!4 &1086825528
 Transform:
@@ -33016,7 +33023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895743972}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 4.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34662,11 +34669,16 @@ MonoBehaviour:
   player: {fileID: 0}
   enemies: []
   enemySpawnLocations: []
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  leftRay: {fileID: 0}
+  rightRay: {fileID: 0}
   spawnEnemy: {fileID: 0}
   audioPlayer: {fileID: 0}
   battleMusic: {fileID: 0}
   normalMusic: {fileID: 0}
   isPlayerInCombat: 0
+  exit: {fileID: 0}
   musicVolume: 0
   playerHitBox: {fileID: 0}
 --- !u!4 &1966382446
